@@ -26,18 +26,7 @@ export const connectWallet = async () => {
     } else {
       return {
         address: "",
-        status: (
-          <span>
-            <p>
-              {" "}
-              🦊{" "}
-              <a target="_blank" href={`https://metamask.io/download.html`}>
-                You must install Metamask, a virtual Ethereum wallet, in your
-                browser.
-              </a>
-            </p>
-          </span>
-        ),
+        
       };
     }
   };
@@ -115,18 +104,7 @@ if (window.ethereum) {
 } else {
   return {
     address: "",
-    status: (
-      <span>
-        <p>
-          {" "}
-          🦊{" "}
-          <a target="_blank" href={`https://metamask.io/download.html`}>
-            You must install Metamask, a virtual Ethereum wallet, in your
-            browser.
-          </a>
-        </p>
-      </span>
-    ),
+    
   };
 }
 };
